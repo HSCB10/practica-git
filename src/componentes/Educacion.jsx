@@ -1,40 +1,27 @@
 function Educacion() {
-  const estudios = [
-    {
-      institucion: "SENA",
-      curso: "Tecnólogo en Análisis y Desarrollo de Software",
-      año: "2024"
-    },
-    {
-      institucion: "SENA",
-      curso: "Curso Complementario: Programación Básica en JavaScript",
-      año: "2023"
-    },
-    {
-      institucion: "Google Activate",
-      curso: "Fundamentos de Marketing Digital",
-      año: "2022"
-    },
-    {
-      institucion: "Platzi",
-      curso: "Curso de HTML y CSS",
-      año: "2021"
-    }
+  const educacion = [
+    { institucion: "SENA", curso: "Tecnólogo ADSO", año: 2024 },
+    { institucion: "Platzi", curso: "Curso Profesional de JavaScript", año: 2023 },
+    { institucion: "FreeCodeCamp", curso: "Responsive Web Design", año: 2022 },
+    { institucion: "Udemy", curso: "React desde Cero", año: 2023 },
+    { institucion: "Google Activate", curso: "Marketing Digital", año: 2021 },
+    { institucion: "SENA", curso: "Curso Básico de Python", año: 2022 },
+    { institucion: "Coursera", curso: "Algorithm Basics", año: 2023 },
+    { institucion: "Cisco Networking", curso: "Introduction to Cybersecurity", año: 2022 },
+    { institucion: "Microsoft Learn", curso: "Azure Foundations", año: 2024 },
+    { institucion: "EDteam", curso: "Git & GitHub Profesional", año: 2023 }
   ];
 
   return (
     <section>
       <h2>Educación</h2>
-      {estudios.map((edu, index) => (
-        <div key={index} style={{ marginBottom: "15px" }}>
-          <h3>{edu.curso}</h3>
-          <p>
-            <strong>Institución:</strong> {edu.institucion}  
-            <br />
-            <strong>Año:</strong> {edu.año}
-          </p>
-        </div>
-      ))}
+      <ul>
+        {educacion.map((edu, index) => (
+          <li key={index}>
+            <strong>{edu.curso}</strong> – {edu.institucion} ({edu.año})
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
