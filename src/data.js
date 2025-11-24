@@ -1,7 +1,7 @@
 export const datosPersonales = {
   nombre: "Steven Cuesta Benitez",
   cargo: "Desarrollador Front-End Jr",
-  ciudad: "Cali, Colombia",
+  ciudad: "medellin, Colombia",
   contacto: "304 445 8590 - steven@example.com"
 };
 
