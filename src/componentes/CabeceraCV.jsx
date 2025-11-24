@@ -1,9 +1,10 @@
-function CabeceraCV() {
+function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
   return (
-    <header style={{ textAlign: "center", marginBottom: "20px" }}>
-      <h1>Steven Cuesta Benítez</h1>
-      <h2>Desarrollador Front-End Jr.</h2>
-      <p>📞 304 445 8590 | ✉️ chavadw01@gmail.com.com | 📍 medellin, Colombia</p>
+    <header>
+      <h1>{nombre}</h1>
+      <h2>{cargo}</h2>
+      <p>{ciudad}</p>
+      <p>{contacto}</p>
     </header>
   );
 }
